@@ -42,6 +42,8 @@ gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'stripe', '~> 4.12'
+gem 'trix-rails', require: 'trix'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 group :production do
   gem 'pg'
