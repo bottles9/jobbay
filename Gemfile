@@ -31,7 +31,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development do
   gem 'sqlite3', '~> 1.3.6'
 end
-gem 'trix', '~> 0.11.1'
+
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'paperclip', '~> 6.1'
@@ -41,7 +41,7 @@ gem 'sidekiq', '~> 5.2', '>= 5.2.5'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick', '~> 4.9', '>= 4.9.3'
-
+gem 'stripe', '~> 4.12'
 
 group :production do
   gem 'pg'
