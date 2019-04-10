@@ -1,1 +1,0 @@
-Figaro.require_keys("stripe_publishable_key", "stripe_api_key")

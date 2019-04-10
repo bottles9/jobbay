@@ -46,6 +46,7 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.3'
 gem 'stripe', '~> 4.12'
 gem 'trix-rails', require: 'trix'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'jquery-rails'
 
 group :production do
   gem 'pg'

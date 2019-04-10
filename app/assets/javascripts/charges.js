@@ -1,6 +1,6 @@
 document.addEventListener("turbolinks:load", function() {
   const public_key = document.querySelector("meta[name='stripe-public-key']").content;
-  var stripe = Stripe('pk_test_stKa49OPmi0mqZokn0pBXCum');
+  const stripe = Stripe(public_key);
   const elements = stripe.elements();
 
   const style = {
