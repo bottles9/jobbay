@@ -1,3 +1,4 @@
+document.domain = 'localhost:3000';
 document.addEventListener("turbolinks:load", function() {
   const public_key = document.querySelector("meta[name='stripe-public-key']").content;
   const stripe = Stripe(public_key);

@@ -1,3 +1,4 @@
+document.domain = 'localhost:3000';
 document.addEventListener("turbolinks:load", function() {
 
   var instrumentImage = document.querySelector('.job-avatar');
