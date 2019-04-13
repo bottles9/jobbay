@@ -1,10 +1,14 @@
 // *= require trix
 
+
 @import "bulma";
 @import "functions";
 @import "jobs";
 @import "stripe";
 
+body {
+	font-family: 'Raleway', sans-serif;
+}
 .notification {
   border-radius: 0;
 }

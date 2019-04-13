@@ -48,6 +48,7 @@ gem 'trix-rails', require: 'trix'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'jquery-rails'
 
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'

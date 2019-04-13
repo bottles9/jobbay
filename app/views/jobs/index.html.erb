@@ -23,9 +23,21 @@
           <%= sanitize(job.description.truncate(200, separator: '</p>')) %>
         </div>
 
-        <% if current_user.try(:admin) || job_author(job) %>
+        <% if current_user.try(:admin) %>
           <ul class="pv3">
-            <li class="inline-block f6">Admin controls: </li>
+            <li class="inline-block f6">Admin Controls: </li>
+            <li class="inline-block">
+              <%= link_to 'View', job, class: 'button is-small is-link is-outlined' %></li>
+            <li class="inline-block">
+              <%= link_to 'Edit', edit_job_path(job), class: 'button is-small is-link is-outlined' %></li>
+            <li class="inline-block">
+              <%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button is-small is-link is-outlined' %></li>
+          </ul>
+        <% end %>
+
+        <% if current_user.try(:job) || job_author(job) %>
+          <ul class="pv3">
+            <li class="inline-block f6"><%= current_user.name.capitalize %> Controls : </li>
             <li class="inline-block">
               <%= link_to 'View', job, class: 'button is-small is-link is-outlined' %></li>
             <li class="inline-block">
