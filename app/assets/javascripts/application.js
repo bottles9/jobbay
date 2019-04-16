@@ -14,4 +14,6 @@
 //= require turbolinks
 //= require jquery
 //= require activestorage
+//= require_tree .
+//= require charges
 
